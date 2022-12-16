@@ -60,9 +60,25 @@
     <main>
         <section id="supportUs-section">
             <h1 id="support-heading">Support Us</h1>
-            <div id="scanner-img">
-                <img src="../assets/img/scanner.jpeg" id="scanner-img" alt="scanner"> <br>
-                <a href="../assets/img/scanner.jpeg" class="support-btn" download>Download Scanner</a>
+            <div id="support-details">
+                <div id="scanner-img">
+                    <img src="../assets/img/scanner.jpeg" id="scanner-img" alt="scanner"> <br>
+                    <a href="../assets/img/scanner.jpeg" class="support-btn" download>Download Scanner</a>
+                    <div id="upiId">
+                        <p id="upi">UPI ID : 7045282363@paytm</p>
+                        <button id="copy-upi">Copy</button>
+                    </div>
+                </div>
+                <div id="bank-details">
+                    <h2>Bank Details</h2>
+                    <div id="bank-det">
+                        <p>Name: Asiya Mohammed Hanif Shaikh</p>
+                        <p>Bank name: Punjab & Sind Bank</p>
+                        <p>Acc no: 05231000040269</p>
+                        <p>IFSC code: PSIB0000523</p>
+                        <p>Branch: Vikhroli west</p>
+                    </div>
+                </div>
             </div>
             <h1 class="support-quote">" The greatest good is what <br> we do for one another " <br>
             <span class="support-quote1">~ Mother Teresa</span></h1>
@@ -109,4 +125,16 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+<script>
+    const upiId = '7045282363@paytm'
+    const copy_upi_btn = document.getElementById('copy-upi');
+
+    copy_upi_btn.addEventListener('click',()=>{
+    navigator.clipboard.writeText(upiId);
+    copy_upi_btn.innerText = 'Copied'
+    setTimeout(()=>{
+        copy_upi_btn.innerText = 'Copy'
+    },3000)
+})
+</script>
 </html>
