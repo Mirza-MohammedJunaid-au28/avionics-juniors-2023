@@ -637,15 +637,59 @@
   margin: 20px 0;
 }
 
-#scanner-img{
-  width: 100%;
+#support-details{
+  display: flex;
+}
+
+#support-details > h3{
   text-align: center;
+}
+
+#scanner-img{
+  width: 50%;
+  text-align: center;
+}
+
+#upiId{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  font-size: 1.2rem;
+}
+
+#upiId > p{
+  margin: auto 10px;
+}
+
+#upiId > button{
+  font-size: 1.1rem;
+  padding:3px 15px;
+  background-color: var(--color);
+  color: #fff;
+  border-radius: 8px;
 }
 
 #scanner-img > img{
   height: 300px;
   width: 300px;
   margin-bottom: 30px;
+}
+
+#bank-details{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#bank-details > #bank-det{
+  font-size: 1.5rem;
+  margin-top: 50px;
+}
+
+#bank-details > h3{
+  text-align: center;
 }
 
 .support-btn{
